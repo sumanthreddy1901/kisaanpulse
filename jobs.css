@@ -1,0 +1,110 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #28a745;
+    padding: 15px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.jobs-hero {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.jobs-hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.jobs-hero p {
+    font-size: 18px;
+}
+
+/* Job List */
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Job Card */
+.job-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.job-card h2 {
+    font-size: 24px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.apply-now {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.apply-now:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .jobs-hero h1 {
+        font-size: 28px;
+    }
+
+    .jobs-hero p, .job-card p {
+        font-size: 15px;
+    }
+
+    .job-card h2 {
+        font-size: 20px;
+    }
+}
